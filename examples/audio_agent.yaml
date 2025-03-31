@@ -1,0 +1,19 @@
+models:
+  - name: Gemini
+    type: Gemini
+    config:
+      id: gemini-2.0-flash
+agents:
+  - name: Agent
+    type: BasicAgent
+    config:
+      model: Gemini
+      markdown: True
+examples:
+  - name: default
+    type: PrintResponse
+    config:
+      agent: Agent
+      message: "What is in this audio?"
+      audio:
+        - url: https://openaiassets.blob.core.windows.net/$web/API/docs/audio/alloy.wav

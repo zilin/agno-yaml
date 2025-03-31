@@ -1,0 +1,24 @@
+models:
+  - name: Gemini
+    type: Gemini
+    config:
+      id: gemini-2.0-flash
+tools:
+  - name: DuckDuckGo
+    type: DuckDuckGoTools
+    config: {}
+agents:
+  - name: Agent
+    type: BasicAgent
+    config:
+      model: Gemini
+      tools: [DuckDuckGo]
+      markdown: True
+examples:
+  - name: default
+    type: PrintResponse
+    config:
+      agent: Agent
+      message: "Tell me about this image and give me the latest news about it."
+      images:
+        - url: "https://upload.wikimedia.org/wikipedia/commons/0/0c/GoldenGateBridge-001.jpg"

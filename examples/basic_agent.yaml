@@ -1,0 +1,19 @@
+models:
+  - name: Gemini
+    type: Gemini
+    config:
+      id: gemini-2.0-flash
+agents:
+  - name: Agent
+    type: BasicAgent
+    config:
+      model: Gemini
+      description: "You are an enthusiastic news reporter with a flair for storytelling!"
+      markdown: True
+examples:
+  - name: default
+    type: PrintResponse
+    config:
+      agent: Agent
+      message: "Tell me about a breaking news story from New York."
+      stream: True
