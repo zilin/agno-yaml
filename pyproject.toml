@@ -1,7 +1,7 @@
 [project]
 name = "agno-yaml-builder"
 version = "0.1.0"
-description = "A tool helps you quickly define your Agno components in human-readable YAML files"
+description = "A Python utility library for defining and constructing Agno Agents, Teams, and Workflows using declarative YAML configuration files"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

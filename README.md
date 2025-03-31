@@ -1,6 +1,10 @@
 # Agno YAML Builder
 
-[![PyPI version](https://badge.fury.io/py/agno-yaml-builder.svg)](https://badge.fury.io/py/agno-yaml-builder) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Build Status](https://github.com/zilin/agno-yaml/actions/workflows/ci.yml/badge.svg)](https://github.com/zilin/agno-yaml/actions/workflows/ci.yml) [![Coverage Status](https://coveralls.io/repos/github/zilin/agno-yaml/badge.svg?branch=main)](https://coveralls.io/github/zilin/agno-yaml?branch=main) A Python utility library for defining and constructing [Agno](https://github.com/agno-agi/agno) Agents, Teams, and Workflows using declarative YAML configuration files.
+A Python utility library for defining and constructing [Agno](https://github.com/agno-agi/agno) Agents, Teams, and Workflows using declarative YAML configuration files.
+
+## Status
+
+[![PyPI version](https://badge.fury.io/py/agno-yaml-builder.svg)](https://badge.fury.io/py/agno-yaml-builder) [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/MIT) 
 
 ## Overview
 
