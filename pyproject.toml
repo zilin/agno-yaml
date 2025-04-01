@@ -7,10 +7,12 @@ requires-python = ">=3.12"
 dependencies = [
     "agno>=1.2.6",
     "duckduckgo-search>=7.5.5",
+    "fastapi>=0.115.12",
     "google-genai>=1.8.0",
     "lxml-html-clean>=0.4.1",
     "newspaper4k>=0.9.3.1",
     "pyyaml>=6.0.2",
+    "uvicorn>=0.34.0",
     "yfinance>=0.2.55",
 ]
 
