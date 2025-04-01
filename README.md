@@ -32,3 +32,16 @@ You can install `agno-yaml-builder` using pip:
 ```bash
 pip install agno-yaml-builder
 ```
+
+## Quickstart
+
+You can clone this repo using:
+
+```bash
+git clone git@github.com:zilin/agno-yaml.git
+```
+
+Try some examples.
+```bash
+python -m agno_yaml.main
+```

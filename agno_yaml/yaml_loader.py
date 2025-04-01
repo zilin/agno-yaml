@@ -2,6 +2,7 @@ import os.path
 from typing import NamedTuple
 import importlib
 import yaml
+from agno_yaml.agno_providers import AGNO_PROVIDERS
 
 
 class Providers(NamedTuple):
@@ -215,10 +216,9 @@ def load_yaml_specs(yaml_file, providers_yaml_file=None):
     """Load yaml file and providers yaml file."""
     if providers_yaml_file:
         providers_yaml_spec = load_yaml_file(providers_yaml_file)
-        providers = parse_providers(providers_yaml_spec)
     else:
-        providers = None
-
+        providers_yaml_spec = yaml.safe_load(AGNO_PROVIDERS)
+    providers = parse_providers(providers_yaml_spec)
     yaml_path = os.path.dirname(yaml_file)
     yaml_spec = load_yaml_file(yaml_file)
     return load_yaml_spec(yaml_spec, yaml_path, providers)

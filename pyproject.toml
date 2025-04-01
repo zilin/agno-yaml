@@ -1,9 +1,11 @@
 [project]
 name = "agno-yaml-builder"
-version = "0.1.1"
+version = "0.1.2"
 description = "A Python utility library for defining and constructing Agno Agents, Teams, and Workflows using declarative YAML configuration files"
 readme = "README.md"
 requires-python = ">=3.12"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
 dependencies = [
     "agno>=1.2.6",
     "duckduckgo-search>=7.5.5",
@@ -16,14 +18,14 @@ dependencies = [
     "yfinance>=0.2.55",
 ]
 
+[project.urls]
+Homepage = "https://github.com/zilin/agno-yaml"
+
 [tool.setuptools]
 include-package-data = true
 
 [tool.setuptools.packages.find]
-where = ["agno_yaml", "examples"]
-
-[tool.setuptools.package-data]
-"examples" = ["*.yaml"]
+include = ["agno_yaml*"]
 
 [project.scripts]
-agno-yaml-cli = "main:main"
+agno-yaml-cli = "argn_yaml.main:main"
